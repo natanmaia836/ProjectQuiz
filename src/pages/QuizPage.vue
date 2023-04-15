@@ -1,124 +1,209 @@
 <template>
-  <q-page class="q-pa-md">
-    <div>
-      <q-carousel animated ref="carousel" v-model="slide" infinite>
-        <q-carousel-slide
-          :name="1"
-          img-src="~/assets/harrypotter-carousel-1.png"
-        />
-        <q-carousel-slide
-          :name="2"
-          img-src="~/assets/harrypotter-carousel-2.jpg"
-        />
-        <q-carousel-slide
-          :name="3"
-          img-src="https://cdn.quasar.dev/img/parallax2.jpg"
-        />
-        <q-carousel-slide
-          :name="4"
-          img-src="https://cdn.quasar.dev/img/quasar.jpg"
-        />
-        <q-carousel-slide
-          :name="5"
-          img-src="https://cdn.quasar.dev/img/mountains.jpg"
-        />
-        <q-carousel-slide
-          :name="6"
-          img-src="https://cdn.quasar.dev/img/parallax1.jpg"
-        />
-        <q-carousel-slide
-          :name="7"
-          img-src="https://cdn.quasar.dev/img/parallax2.jpg"
-        />
-        <q-carousel-slide
-          :name="8"
-          img-src="https://cdn.quasar.dev/img/quasar.jpg"
-        />
-        <q-carousel-slide
-          :name="9"
-          img-src="https://cdn.quasar.dev/img/parallax2.jpg"
-        />
-        <q-carousel-slide
-          :name="10"
-          img-src="https://cdn.quasar.dev/img/quasar.jpg"
-        />
-      </q-carousel>
+  <q-page class="q-pa-md bg-grey-3">
+    <div class="row justify-center">
+      <div
+        v-if="screenWidth > 530"
+        style="box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5)"
+        class="col-md-9 col-xs-12"
+      >
+        <q-carousel animated ref="carousel" v-model="slide" infinite>
+          <q-carousel-slide
+            :name="1"
+            img-src="~/assets/harrypotter-carousel-1.png"
+          />
+          <q-carousel-slide
+            :name="2"
+            img-src="~/assets/harrypotter-carousel-2.jpg"
+          />
+          <q-carousel-slide
+            :name="3"
+            img-src="~/assets/harrypotter-carousel-3.png"
+          />
+          <q-carousel-slide
+            :name="4"
+            img-src="~/assets/harrypotter-carousel-4.jpg"
+          />
+          <q-carousel-slide
+            :name="5"
+            img-src="~/assets/harrypotter-carousel-5.png"
+          />
+          <q-carousel-slide
+            :name="6"
+            img-src="~/assets/harrypotter-carousel-6.jpg"
+          />
+          <q-carousel-slide
+            :name="7"
+            img-src="~/assets/harrypotter-carousel-7.jpg"
+          />
+          <q-carousel-slide
+            :name="8"
+            img-src="~/assets/harrypotter-carousel-8.jpg"
+          />
+          <q-carousel-slide
+            :name="9"
+            img-src="~/assets/harrypotter-carousel-9.jpg"
+          />
+          <q-carousel-slide
+            :name="10"
+            img-src="~/assets/harrypotter-carousel-10.jpg"
+          />
+        </q-carousel>
+      </div>
+      <div
+        v-if="screenWidth < 530"
+        style="box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5)"
+        class="col-md-9 col-xs-12"
+      >
+        <q-carousel animated ref="carousel" v-model="slide" infinite>
+          <q-carousel-slide
+            :name="1"
+            img-src="~/assets/harrypotter-carousel-mobile-1.jpg"
+          />
+          <q-carousel-slide
+            :name="2"
+            img-src="~/assets/harrypotter-carousel-2.jpg"
+          />
+          <q-carousel-slide
+            :name="3"
+            img-src="~/assets/harrypotter-carousel-mobile-3.jpg"
+          />
+          <q-carousel-slide
+            :name="4"
+            img-src="~/assets/harrypotter-carousel-mobile-4.jpg"
+          />
+          <q-carousel-slide
+            :name="5"
+            img-src="~/assets/harrypotter-carousel-5.png"
+          />
+          <q-carousel-slide
+            :name="6"
+            img-src="~/assets/harrypotter-carousel-6.jpg"
+          />
+          <q-carousel-slide
+            :name="7"
+            img-src="~/assets/harrypotter-carousel-mobile-7.jpg"
+          />
+          <q-carousel-slide
+            :name="8"
+            img-src="~/assets/harrypotter-carousel-mobile-8.jpg"
+          />
+          <q-carousel-slide
+            :name="9"
+            img-src="~/assets/harrypotter-carousel-mobile-9.jpg"
+          />
+          <q-carousel-slide
+            :name="10"
+            img-src="~/assets/harrypotter-carousel-10.jpg"
+          />
+        </q-carousel>
+      </div>
     </div>
-    <div class="row q-mb-sm">
+    <div class="row q-mt-sm">
       <span class="text-h8">Pergunta {{ slide }}/10</span>
     </div>
-    <div class="row justify-center text-center">
-      <span class="text-h7 text-weight-bold">{{ subtitle }}</span>
-    </div>
-    <div class="row q-mt-sm q-col-gutter-y-sm column">
-      <div class="col-md">
-        <q-input readonly :bg-color="cor1" :label="texto1" outlined>
-          <template v-slot:prepend>
-            <q-checkbox
-              v-model="input1"
-              @click="checkboxSelect()"
-              :disable="selecionado"
-            />
-          </template>
-        </q-input>
+    <q-card class="q-pa-md">
+      <div class="row justify-center text-center">
+        <span class="text-h7 text-weight-bold">{{ subtitle }}</span>
       </div>
-      <div class="col-md">
-        <q-input readonly :bg-color="cor2" :label="texto2" outlined>
-          <template v-slot:prepend>
-            <q-checkbox
-              v-model="input2"
-              @click="checkboxSelect()"
-              :disable="selecionado"
-            />
-          </template>
-        </q-input>
+      <!-- VERDADEIRO E FALSO -->
+      <div class="row q-mt-sm column">
+        <div v-if="slide == 3 || slide == 4 || slide == 10">
+          <div class="col-md">
+            <q-input readonly :bg-color="cor6" :label="texto6" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input6"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+          <div class="col-md q-mt-sm">
+            <q-input readonly :bg-color="cor5" :label="texto5" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input5"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+        </div>
+        <!-- 4 BOTÕES -->
+        <div class="q-col-gutter-y-sm" v-else>
+          <div class="col-md-2">
+            <q-input readonly :bg-color="cor1" :label="texto1" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input1"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+          <div class="col-md">
+            <q-input readonly :bg-color="cor2" :label="texto2" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input2"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+          <div class="col-md">
+            <q-input readonly :bg-color="cor3" :label="texto3" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input3"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+          <div class="col-md">
+            <q-input readonly :bg-color="cor4" :label="texto4" outlined>
+              <template v-slot:prepend>
+                <q-checkbox
+                  v-model="input4"
+                  @click="checkboxSelect()"
+                  :disable="selecionado"
+                />
+              </template>
+            </q-input>
+          </div>
+        </div>
+
+        <!-- NEXT / HOME -->
+        <div class="col-md absolute-bottom-right">
+          <q-btn
+            v-if="selecionado && slide < 10"
+            style="z-index: 100"
+            color="primary"
+            v-model="slide"
+            @click="$refs.carousel.next(), nextOne()"
+            icon="arrow_forward_ios"
+            round
+            size="lg"
+          ></q-btn>
+          <q-btn
+            v-if="selecionado && slide == 10"
+            style="z-index: 100"
+            color="primary"
+            v-model="slide"
+            href="/"
+            icon="home"
+            round
+            size="lg"
+          ></q-btn>
+        </div>
       </div>
-      <div class="col-md">
-        <q-input readonly :bg-color="cor3" :label="texto3" outlined>
-          <template v-slot:prepend>
-            <q-checkbox
-              v-model="input3"
-              @click="checkboxSelect()"
-              :disable="selecionado"
-            />
-          </template>
-        </q-input>
-      </div>
-      <div class="col-md">
-        <q-input readonly :bg-color="cor4" :label="texto4" outlined>
-          <template v-slot:prepend>
-            <q-checkbox
-              v-model="input4"
-              @click="checkboxSelect()"
-              :disable="selecionado"
-            />
-          </template>
-        </q-input>
-      </div>
-      <div class="col-md">
-        <q-input readonly :bg-color="cor5" :label="texto5" outlined>
-          <template v-slot:prepend>
-            <q-checkbox
-              v-model="input5"
-              @click="checkboxSelect()"
-              :disable="selecionado"
-            />
-          </template>
-        </q-input>
-      </div>
-      <div class="col absolute-bottom-right">
-        <q-btn
-          v-if="input1 || input2 || input3 || input4 || input5"
-          style="z-index: 100"
-          color="primary"
-          v-model="slide"
-          @click="$refs.carousel.next(), nextOne()"
-          icon="arrow_forward_ios"
-          round
-          size="lg"
-        ></q-btn>
-      </div>
-    </div>
+    </q-card>
     <q-dialog v-model="qDialogEmail" persistent>
       <q-card>
         <q-card-section>
@@ -126,8 +211,8 @@
         </q-card-section>
 
         <q-card-section class="q-pt-none">
-          Você conseguiu responder todas as questões, deseja ver seu resultado?,
-          digite seu e-mail e receba também por lá.
+          Olá!, você concluiu todas as questões, para ver seu resultado digite
+          seu e-mail e receba também por lá.
         </q-card-section>
 
         <q-card-section class="q-pt-none">
@@ -206,7 +291,7 @@
             name="dark_mode"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
+            v-if="seuTipo == 'Bruxo Aprendiz'"
           />
           <q-icon
             name="hiking"
@@ -228,10 +313,7 @@
             o próprio sangue que percorria suas veias, visto por ti como uma
             dádiva, sempre a seu comando e a mercê de seu destino.
           </div>
-          <div
-            class="q-mt-md text-center"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
-          >
+          <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo Aprendiz'">
             Ainda quando criança, no quarto de seus pais você achou encondida em
             meio a algumas mudas de roupas uma varinha, segurando-a você pode
             sentir por um breve momento um lapso de energia percorrer seu corpo.
@@ -268,7 +350,7 @@
             name="history_edu"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
+            v-if="seuTipo == 'Bruxo Aprendiz'"
           />
           <q-icon
             name="location_city"
@@ -291,10 +373,7 @@
             você buscava seu próprio limite, enfrentar seu destino com tudo que
             estivesse a seu alcance.
           </div>
-          <div
-            class="q-mt-md text-center"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
-          >
+          <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo Aprendiz'">
             Sua afinidade pela magia era notável, mas algo lhe faltava, algo
             além da dedicação e do exforço, eis então que uma coruja pousa em
             sua janela deixa uma carta e voa noite a dentro, um convite?, para
@@ -333,7 +412,7 @@
             name="location_city"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
+            v-if="seuTipo == 'Bruxo Aprendiz'"
           />
           <q-icon
             name="family_restroom"
@@ -355,10 +434,7 @@
             você foi fatalmente atingido e antes de cair, certificou-se de que
             nenhum deles ainda estaria de pé.
           </div>
-          <div
-            class="q-mt-md text-center"
-            v-if="seuTipo == 'Aprendiz de Bruxo'"
-          >
+          <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo Aprendiz'">
             Em Hogwarts tudo era único e diferente, você se dedicou aos
             ensinamentos, fez diversos feitos e conseguiu invocar seu prórpio
             patrono enchendo de orgulho seus pais e professores, um futuro
@@ -394,17 +470,19 @@ export default defineComponent({
   setup() {
     const slide = ref(1);
     const slideDialogResultado = ref(1);
-    const subtitle = ref("Quais são os três protagonistas de Hary Potter?");
-    const texto1 = ref("Harry Potter, Hermione Granger e Toby Maguire");
-    const texto2 = ref("Harry Potter, Rony Weasley e Dolores Umbridge");
-    const texto3 = ref("Rony Weasley, Hermione Gramsey e Joaquim Fenix");
-    const texto4 = ref("Hermione Gramsey, Rony Weasley e Draco Malfoy");
-    const texto5 = ref("Rony Weasley, Harry Potter e Hermione Gramsey");
+    const subtitle = ref("Quais são os três protagonistas de Harry Potter?");
+    const texto1 = ref("Harry, Hermione e Toby");
+    const texto2 = ref("Harry, Rony e Dolores");
+    const texto3 = ref("Rony, Hermione e Draco");
+    const texto4 = ref(" Harry, Hermione e Rony ");
+    const texto5 = ref("Falso");
+    const texto6 = ref("Verdadeiro");
     const cor1 = ref("");
     const cor2 = ref("");
     const cor3 = ref("");
     const cor4 = ref("");
     const cor5 = ref("");
+    const cor6 = ref("");
     const email = ref("");
     const seuTipo = ref("");
     const input1 = ref(false);
@@ -412,13 +490,16 @@ export default defineComponent({
     const input3 = ref(false);
     const input4 = ref(false);
     const input5 = ref(false);
+    const input6 = ref(false);
     const selecionado = ref(false);
     const qDialogResultado = ref(false);
     const qDialogEmail = ref(false);
     const acertos = ref(0);
-
+    const screenWidth = ref(window.screen.width); // armazena a largura da tela atual
+    const screenHeight = ref(window.screen.height); // armazena a altura da tela atual
     onMounted(() => {
-      //console.log(acertos.value);
+      // console.log(screenWidth);
+      // console.log(screenHeight);
     });
 
     const MsgSucesso = () => {
@@ -439,85 +520,64 @@ export default defineComponent({
     const nextOne = () => {
       limparAll();
       if (slide.value == 2) {
-        subtitle.value =
-          "Qual o feitiço usado para abrir portas e janelas trancadas?";
+        subtitle.value = "Qual o feitiço usado para abrir portas trancadas?";
         texto1.value = "Expecto Patronum";
         texto2.value = "Expelliarmus";
         texto3.value = "Alohomora";
         texto4.value = "Crucio";
-        texto5.value = "Colloportus";
       } else if (slide.value == 3) {
         subtitle.value =
-          "Qual o feitiço que Draco usa para lançar uma cobra de sua varinha?";
-        texto1.value = "Sectumsempra";
-        texto2.value = "Expelliarmus";
-        texto3.value = "Serpensortia";
-        texto4.value = "Protego Horribilis";
-        texto5.value = "Piertotum Locomator";
+          "A casa de Hogwarts que Harry Potter é selecionado é Lufa-Lufa?";
       } else if (slide.value == 4) {
-        subtitle.value = "O que são dementadores?";
-        texto1.value = "Criaturas das trevas que consomem a alegria";
-        texto2.value = "Aranhas da Aracne";
-        texto3.value = "Criaturas metade cavalo e metade homem";
-        texto4.value = "Criaturas bondosas da floresta";
-        texto5.value = "Criaturas das trevas metade homem, metade lobo";
+        subtitle.value = "O patrono de Hermione Granger é um gato?";
       } else if (slide.value == 5) {
-        subtitle.value = "Quais são as casas presentes em Hogwarts?";
-        texto1.value = "Lufa-Lufa, Serpentina, Grifinória, Servinal";
-        texto2.value = "Grifinória, Corvinal, Lannister, Lufa-Lufa";
-        texto3.value = "Serpentina, Grifinória, Sonserina, Corvinal";
-        texto4.value = "Corvinal, Sonserina, Grifinória, Lufa-Lufa";
-        texto5.value = "Grifinória, Sonserina, Lufa-Lufa, Servinal";
+        subtitle.value = "Qual a casa de Harry em Hogwarts?";
+        texto1.value = "Sonserina";
+        texto2.value = "Lufa-Lufa";
+        texto3.value = "Corvinal";
+        texto4.value = "Grifinória";
       } else if (slide.value == 6) {
-        subtitle.value = "De quem Harry Potter ganha a vassoura Nimbus 2000?";
-        texto1.value = "Alvo Dumbledore";
-        texto2.value = "Lord Voldemort";
-        texto3.value = "Minerva McGonagall";
-        texto4.value = "Servero Snape";
-        texto5.value = "Remo Lupin";
+        subtitle.value = "A Nimbus 2000 é uma";
+        texto1.value = "Varinha";
+        texto2.value = "Cajado";
+        texto3.value = "Vassoura";
+        texto4.value = "Horcrux";
       } else if (slide.value == 7) {
         subtitle.value = "Qual o nome da coruja do Harry Potter?";
         texto1.value = "Edward";
-        texto2.value = "Pigwidgeon";
+        texto2.value = "Edwiges";
         texto3.value = "Gizmo";
-        texto4.value = "Almora";
-        texto5.value = "Edwiges";
+        texto4.value = "Pidgeot";
       } else if (slide.value == 8) {
         subtitle.value =
-          "Qual o nome do feitiço de defesa que convoca um animal de energia positiva.";
+          "Qual o feitiço que conjura um animal de energia positiva.";
         texto1.value = "Expecto Patronum";
         texto2.value = "Avada Kedavra";
         texto3.value = "Expectro Patronoum";
         texto4.value = "Expelliarmus";
-        texto5.value = "Sectumsempra";
       } else if (slide.value == 9) {
-        subtitle.value =
-          "Qual é o feitiço conhecido como 'a pior das três Maldições Imperdoáveis'";
+        subtitle.value = "Qual o feitiço proíbido usado por Voldemort?";
         texto1.value = "Sectumsempra";
-        texto2.value = "Sectosumpra";
-        texto3.value = "Valar Morghulis";
-        texto4.value = "Avada Kedrava";
-        texto5.value = "Avada Kedavra";
+        texto2.value = "Valar Morghulis";
+        texto3.value = "Avada Kedrava";
+        texto4.value = "Avada Kedavra";
       } else if (slide.value == 10) {
-        subtitle.value = "Quem é o vilão de Harry Potter?";
-        texto1.value = "Draco Malfoy";
-        texto2.value = "Lord Valdemort";
-        texto3.value = "Severo Snape";
-        texto4.value = "Lord Voldemort";
-        texto5.value = "Lord Valdomiro";
+        subtitle.value =
+          "A Pedra Filosofal é o primeiro livro da série Harry Potter?";
       }
     };
     const sendEmail = () => {
       MsgSucesso();
       if (acertos.value <= 3) {
         seuTipo.value = "Trouxa";
-      } else if (acertos.value == 4 || acertos.value <= 7) {
+      } else if (acertos.value <= 7) {
         seuTipo.value = "Bruxo Aprendiz";
       } else if (acertos.value == 8 || acertos.value == 9) {
         seuTipo.value = "Bruxo";
       } else {
         seuTipo.value = "Grande Feiticeiro";
       }
+
       qDialogResultado.value = true;
     };
     const limparAll = () => {
@@ -527,45 +587,34 @@ export default defineComponent({
       texto2.value = "";
       texto3.value = "";
       texto4.value = "";
-      texto5.value = "";
       cor1.value = "";
       cor2.value = "";
       cor3.value = "";
       cor4.value = "";
       cor5.value = "";
+      cor6.value = "";
+
       input1.value = false;
       input2.value = false;
       input3.value = false;
       input4.value = false;
       input5.value = false;
+      input6.value = false;
     };
     const situacoesSelect = () => {
       if (slide.value == 1) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
-          if (input5.value) {
+        if (input1.value || input2.value || input3.value || input4.value) {
+          if (input4.value) {
             acertos.value = acertos.value + 1;
           }
           selecionado.value = true;
           cor1.value = "red";
           cor2.value = "red";
           cor3.value = "red";
-          cor4.value = "red";
-          cor5.value = "green";
+          cor4.value = "green";
         }
       } else if (slide.value == 2) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
+        if (input1.value || input2.value || input3.value || input4.value) {
           if (input3.value) {
             acertos.value++;
           }
@@ -574,52 +623,27 @@ export default defineComponent({
           cor2.value = "red";
           cor3.value = "green";
           cor4.value = "red";
-          cor5.value = "red";
         }
       } else if (slide.value == 3) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
-          if (input3.value) {
+        if (input5.value || input6.value) {
+          if (input5.value) {
             acertos.value++;
           }
           selecionado.value = true;
-          cor1.value = "red";
-          cor2.value = "red";
-          cor3.value = "green";
-          cor4.value = "red";
-          cor5.value = "red";
+          cor5.value = "green";
+          cor6.value = "red";
         }
       } else if (slide.value == 4) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
-          if (input1.value) {
+        {
+          if (input5.value) {
             acertos.value++;
           }
           selecionado.value = true;
-          cor1.value = "green";
-          cor2.value = "red";
-          cor3.value = "red";
-          cor4.value = "red";
-          cor5.value = "red";
+          cor5.value = "green";
+          cor6.value = "red";
         }
       } else if (slide.value == 5) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
+        if (input1.value || input2.value || input3.value || input4.value) {
           if (input4.value) {
             acertos.value++;
           }
@@ -628,16 +652,9 @@ export default defineComponent({
           cor2.value = "red";
           cor3.value = "red";
           cor4.value = "green";
-          cor5.value = "red";
         }
       } else if (slide.value == 6) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
+        if (input1.value || input2.value || input3.value || input4.value) {
           if (input3.value) {
             acertos.value++;
           }
@@ -646,34 +663,20 @@ export default defineComponent({
           cor2.value = "red";
           cor3.value = "green";
           cor4.value = "red";
-          cor5.value = "red";
         }
       } else if (slide.value == 7) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
-          if (input5.value) {
+        if (input1.value || input2.value || input3.value || input4.value) {
+          if (input2.value) {
             acertos.value++;
           }
           selecionado.value = true;
           cor1.value = "red";
-          cor2.value = "red";
+          cor2.value = "green";
           cor3.value = "red";
           cor4.value = "red";
-          cor5.value = "green";
         }
       } else if (slide.value == 8) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
+        if (input1.value || input2.value || input3.value || input4.value) {
           if (input1.value) {
             acertos.value++;
           }
@@ -682,34 +685,9 @@ export default defineComponent({
           cor2.value = "red";
           cor3.value = "red";
           cor4.value = "red";
-          cor5.value = "red";
         }
       } else if (slide.value == 9) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
-          if (input5.value) {
-            acertos.value++;
-          }
-          selecionado.value = true;
-          cor1.value = "red";
-          cor2.value = "red";
-          cor3.value = "red";
-          cor4.value = "red";
-          cor5.value = "green";
-        }
-      } else if (slide.value == 10) {
-        if (
-          input1.value ||
-          input2.value ||
-          input3.value ||
-          input4.value ||
-          input5.value
-        ) {
+        if (input1.value || input2.value || input3.value || input4.value) {
           if (input4.value) {
             acertos.value++;
           }
@@ -718,7 +696,15 @@ export default defineComponent({
           cor2.value = "red";
           cor3.value = "red";
           cor4.value = "green";
+        }
+      } else if (slide.value == 10) {
+        {
+          if (input6.value) {
+            acertos.value++;
+          }
+          selecionado.value = true;
           cor5.value = "red";
+          cor6.value = "green";
           qDialogEmail.value = true;
         }
       }
@@ -732,16 +718,19 @@ export default defineComponent({
       cor3,
       cor4,
       cor5,
+      cor6,
       input1,
       input2,
       input3,
       input4,
       input5,
+      input6,
       texto1,
       texto2,
       texto3,
       texto4,
       texto5,
+      texto6,
       selecionado,
       acertos,
       slideDialogResultado,
@@ -749,6 +738,8 @@ export default defineComponent({
       qDialogResultado,
       email,
       seuTipo,
+      screenWidth,
+      screenHeight,
       checkboxSelect,
       nextOne,
       limparAll,
