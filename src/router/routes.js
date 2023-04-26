@@ -1,19 +1,39 @@
 const routes = [
   {
     path: "/",
+    name: "selecione",
+    component: () => import("pages/SelecionePage.vue"),
+  },
+
+  {
+    path: "/hp-quiz",
+    name: "hp-quiz",
+    component: () => import("pages/HPQuizPage.vue"),
+  },
+
+  {
+    path: "/sda-quiz",
+    name: "sda-quiz",
+    component: () => import("pages/SDAQuizPage.vue"),
+  },
+
+  {
+    path: "/got-quiz",
+    name: "got-quiz",
+    component: () => import("pages/GOTQuizPage.vue"),
+  },
+
+  {
+    path: "/vikns-quiz",
+    name: "vikns-quiz",
+    component: () => import("pages/VIKNSQuizPage.vue"),
+  },
+
+  {
+    path: "/main-layout",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/IndexPage.vue") },
-      {
-        path: "/select-quiz",
-        name: "SelecioneQuizPage",
-        component: () => import("pages/SelecioneQuizPage.vue"),
-      },
-      {
-        path: "/quiz",
-        name: "QuizPage",
-        component: () => import("pages/QuizPage.vue"),
-      },
+      { path: "/index-page", component: () => import("pages/IndexPage.vue") },
     ],
   },
 
