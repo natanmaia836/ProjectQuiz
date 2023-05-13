@@ -99,7 +99,7 @@
       </div>
     </div>
     <div class="row q-mt-sm">
-      <span class="text-h8">Pergunta {{ slide }}/10</span>
+      <span class="text-h8">Pergunta {{ slide }}/10⭐</span>
     </div>
     <q-card class="q-pa-md">
       <div class="row justify-center text-center">
@@ -279,25 +279,25 @@
             name="family_restroom"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Grande Feiticeiro'"
+            v-if="seuTipo == 'Grande Feiticeiro' && screenWidth > 530"
           />
           <q-icon
             name="flare"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo'"
+            v-if="seuTipo == 'Bruxo' && screenWidth > 530"
           />
           <q-icon
             name="dark_mode"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo Aprendiz'"
+            v-if="seuTipo == 'Bruxo Aprendiz' && screenWidth > 530"
           />
           <q-icon
             name="hiking"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Trouxa'"
+            v-if="seuTipo == 'Trouxa' && screenWidth > 530"
           />
           <div
             class="q-mt-md text-center"
@@ -338,29 +338,29 @@
             name="bolt"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Grande Feiticeiro'"
+            v-if="seuTipo == 'Grande Feiticeiro' && screenWidth > 530"
           />
           <q-icon
             name="auto_fix_high"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo'"
+            v-if="seuTipo == 'Bruxo' && screenWidth > 530"
           />
           <q-icon
             name="history_edu"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo Aprendiz'"
+            v-if="seuTipo == 'Bruxo Aprendiz' && screenWidth > 530"
           />
           <q-icon
             name="location_city"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Trouxa'"
+            v-if="seuTipo == 'Trouxa' && screenWidth > 530"
           />
           <div
             class="q-mt-md text-center"
-            v-if="seuTipo == 'Grande Feiticeiro'"
+            v-if="seuTipo == 'Grande Feiticeiro' && screenWidth > 530"
           >
             Em alguns dias seu talento e sua dedicação já eram anormais,
             ultrapassavam os limites que barravam até os sábios, essa sua força
@@ -400,25 +400,25 @@
             name="fireplace"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Grande Feiticeiro'"
+            v-if="seuTipo == 'Grande Feiticeiro' && screenWidth > 530"
           />
           <q-icon
             name="local_fire_department"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo'"
+            v-if="seuTipo == 'Bruxo' && screenWidth > 530"
           />
           <q-icon
             name="location_city"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Bruxo Aprendiz'"
+            v-if="seuTipo == 'Bruxo Aprendiz' && screenWidth > 530"
           />
           <q-icon
             name="family_restroom"
             color="grey-8"
             size="56px"
-            v-if="seuTipo == 'Trouxa'"
+            v-if="seuTipo == 'Trouxa' && screenWidth > 530"
           />
           <div
             class="q-mt-md text-center"
