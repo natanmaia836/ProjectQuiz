@@ -9,43 +9,43 @@
         <q-carousel animated ref="carousel" v-model="slide" infinite>
           <q-carousel-slide
             :name="1"
-            img-src="~assets/HP/harrypotter-carousel-1.png"
+            img-src="~assets/VIKNS/vikings-carousel-1.webp"
           />
           <q-carousel-slide
             :name="2"
-            img-src="~assets/HP/harrypotter-carousel-2.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-2.webp"
           />
           <q-carousel-slide
             :name="3"
-            img-src="~assets/HP/harrypotter-carousel-3.png"
+            img-src="~assets/VIKNS/vikings-carousel-3.webp"
           />
           <q-carousel-slide
             :name="4"
-            img-src="~assets/HP/harrypotter-carousel-4.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-4.jpg"
           />
           <q-carousel-slide
             :name="5"
-            img-src="~assets/HP/harrypotter-carousel-5.png"
+            img-src="~assets/VIKNS/vikings-carousel-5.jpg"
           />
           <q-carousel-slide
             :name="6"
-            img-src="~assets/HP/harrypotter-carousel-6.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-6.jpg"
           />
           <q-carousel-slide
             :name="7"
-            img-src="~assets/HP/harrypotter-carousel-7.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-7.webp"
           />
           <q-carousel-slide
             :name="8"
-            img-src="~assets/HP/harrypotter-carousel-8.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-8.webp"
           />
           <q-carousel-slide
             :name="9"
-            img-src="~assets/HP/harrypotter-carousel-9.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-9.webp"
           />
           <q-carousel-slide
             :name="10"
-            img-src="~assets/HP/harrypotter-carousel-10.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-10.jpg"
           />
         </q-carousel>
       </div>
@@ -57,43 +57,43 @@
         <q-carousel animated ref="carousel" v-model="slide" infinite>
           <q-carousel-slide
             :name="1"
-            img-src="~assets/HP/harrypotter-carousel-mobile-1.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-1.webp"
           />
           <q-carousel-slide
             :name="2"
-            img-src="~assets/HP/harrypotter-carousel-2.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-2.webp"
           />
           <q-carousel-slide
             :name="3"
-            img-src="~assets/HP/harrypotter-carousel-mobile-3.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-3.webp"
           />
           <q-carousel-slide
             :name="4"
-            img-src="~assets/HP/harrypotter-carousel-mobile-4.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-mobile-4.jpg"
           />
           <q-carousel-slide
             :name="5"
-            img-src="~assets/HP/harrypotter-carousel-5.png"
+            img-src="~assets/VIKNS/vikings-carousel-5.jpg"
           />
           <q-carousel-slide
             :name="6"
-            img-src="~assets/HP/harrypotter-carousel-6.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-6.jpg"
           />
           <q-carousel-slide
             :name="7"
-            img-src="~assets/HP/harrypotter-carousel-mobile-7.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-7.webp"
           />
           <q-carousel-slide
             :name="8"
-            img-src="~assets/HP/harrypotter-carousel-mobile-8.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-8.webp"
           />
           <q-carousel-slide
             :name="9"
-            img-src="~assets/HP/harrypotter-carousel-mobile-9.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-9.webp"
           />
           <q-carousel-slide
             :name="10"
-            img-src="~assets/HP/harrypotter-carousel-10.jpg"
+            img-src="~assets/VIKNS/vikings-carousel-mobile-10.jpg"
           />
         </q-carousel>
       </div>
@@ -464,7 +464,7 @@ export default defineComponent({
   name: "HPQuizPage",
 
   setup() {
-    const slide = ref(1);
+    const slide = ref(10);
     const slideDialogResultado = ref(1);
     const subtitle = ref("Os vikings acreditavam em vida após a morte?");
     const texto1 = ref("");
@@ -536,15 +536,17 @@ export default defineComponent({
         texto4.value = "1";
       } else if (slide.value == 5) {
         subtitle.value =
-          "O paraíso para os vikings era conhecido como Midgard?";
+          "O paraíso para os vikings era conhecido como Álfheim?";
       } else if (slide.value == 6) {
-        subtitle.value = "Qual era a tortura mais cruel para os vikings?";
-        texto1.value = "Desmembramento";
-        texto2.value = "Empalamento";
-        texto3.value = "O touro de bronze";
-        texto4.value = "A águia de sangue";
+        subtitle.value =
+          "Na mitologia nórdica qual o nome do lobo presente no Ragnarok?";
+        texto1.value = "yggdrasil";
+        texto2.value = "Hela";
+        texto3.value = "Ymir";
+        texto4.value = "Fenrir";
       } else if (slide.value == 7) {
-        subtitle.value = "Na série o personagem Rollo é o primo de Ragnar?";
+        subtitle.value =
+          "Na série Lagertha é assassinada por Ivar o desossado?";
       } else if (slide.value == 8) {
         subtitle.value = "O que é o Ragnarok para os vikings?";
         texto1.value = "Vida após a morte";

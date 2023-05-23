@@ -9,43 +9,43 @@
         <q-carousel animated ref="carousel" v-model="slide" infinite>
           <q-carousel-slide
             :name="1"
-            img-src="~assets/HP/harrypotter-carousel-1.png"
+            img-src="~assets/GOT/got-carousel-1.webp"
           />
           <q-carousel-slide
             :name="2"
-            img-src="~assets/HP/harrypotter-carousel-2.jpg"
+            img-src="~assets/GOT/got-carousel-2.webp"
           />
           <q-carousel-slide
             :name="3"
-            img-src="~assets/HP/harrypotter-carousel-3.png"
+            img-src="~assets/GOT/got-carousel-3.jpg"
           />
           <q-carousel-slide
             :name="4"
-            img-src="~assets/HP/harrypotter-carousel-4.jpg"
+            img-src="~assets/GOT/got-carousel-4.jpg"
           />
           <q-carousel-slide
             :name="5"
-            img-src="~assets/HP/harrypotter-carousel-5.png"
+            img-src="~assets/GOT/got-carousel-5.webp"
           />
           <q-carousel-slide
             :name="6"
-            img-src="~assets/HP/harrypotter-carousel-6.jpg"
+            img-src="~assets/GOT/got-carousel-6.webp"
           />
           <q-carousel-slide
             :name="7"
-            img-src="~assets/HP/harrypotter-carousel-7.jpg"
+            img-src="~assets/GOT/got-carousel-7.jpg"
           />
           <q-carousel-slide
             :name="8"
-            img-src="~assets/HP/harrypotter-carousel-8.jpg"
+            img-src="~assets/GOT/got-carousel-8.jpg"
           />
           <q-carousel-slide
             :name="9"
-            img-src="~assets/HP/harrypotter-carousel-9.jpg"
+            img-src="~assets/GOT/got-carousel-9.jpg"
           />
           <q-carousel-slide
             :name="10"
-            img-src="~assets/HP/harrypotter-carousel-10.jpg"
+            img-src="~assets/GOT/got-carousel-10.webp"
           />
         </q-carousel>
       </div>
@@ -57,43 +57,43 @@
         <q-carousel animated ref="carousel" v-model="slide" infinite>
           <q-carousel-slide
             :name="1"
-            img-src="~assets/HP/harrypotter-carousel-mobile-1.jpg"
+            img-src="~assets/GOT/got-carousel-mobile-1.webp"
           />
           <q-carousel-slide
             :name="2"
-            img-src="~assets/HP/harrypotter-carousel-2.jpg"
+            img-src="~assets/GOT/got-carousel-2.webp"
           />
           <q-carousel-slide
             :name="3"
-            img-src="~assets/HP/harrypotter-carousel-mobile-3.jpg"
+            img-src="~assets/GOT/got-carousel-3.jpg"
           />
           <q-carousel-slide
             :name="4"
-            img-src="~assets/HP/harrypotter-carousel-mobile-4.jpg"
+            img-src="~assets/GOT/got-carousel-4.jpg"
           />
           <q-carousel-slide
             :name="5"
-            img-src="~assets/HP/harrypotter-carousel-5.png"
+            img-src="~assets/GOT/got-carousel-5.webp"
           />
           <q-carousel-slide
             :name="6"
-            img-src="~assets/HP/harrypotter-carousel-6.jpg"
+            img-src="~assets/GOT/got-carousel-6.webp"
           />
           <q-carousel-slide
             :name="7"
-            img-src="~assets/HP/harrypotter-carousel-mobile-7.jpg"
+            img-src="~assets/GOT/got-carousel-7.jpg"
           />
           <q-carousel-slide
             :name="8"
-            img-src="~assets/HP/harrypotter-carousel-mobile-8.jpg"
+            img-src="~assets/GOT/got-carousel-8.jpg"
           />
           <q-carousel-slide
             :name="9"
-            img-src="~assets/HP/harrypotter-carousel-mobile-9.jpg"
+            img-src="~assets/GOT/got-carousel-mobile-9.webp"
           />
           <q-carousel-slide
             :name="10"
-            img-src="~assets/HP/harrypotter-carousel-10.jpg"
+            img-src="~assets/GOT/got-carousel-10.webp"
           />
         </q-carousel>
       </div>
