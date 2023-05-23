@@ -464,7 +464,7 @@ export default defineComponent({
   name: "HPQuizPage",
 
   setup() {
-    const slide = ref(10);
+    const slide = ref(1);
     const slideDialogResultado = ref(1);
     const subtitle = ref("Os vikings acreditavam em vida após a morte?");
     const texto1 = ref("");
