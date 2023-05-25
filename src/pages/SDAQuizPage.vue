@@ -306,20 +306,19 @@
             tudo e todos.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Guerreiro'">
-            após vestir sua armadura, pesada e desgastada, você lembra das
-            batalhas que viveu, e teme oque virá, á sua frente há um enorme
-            exercito, repleto de orcs, trolls, ogros e diversas criaturas das
-            trevas, o exercíto de Sauron.
+            você veste sua armadura e sente o peso da idade te alcançar, temendo
+            o futuro, voce vê á sua frente um enorme exercito, repleto de orcs,
+            trolls e ogros, é o exercíto de Sauron.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Aventureiro'">
-            O som do vento nas árvores durante suas idas e vindas á cidades e
-            vilarejos enchiam seu coração de esperança, você sonhava diáriamente
-            com o mundo a fora, com os tesouros e perigos que expreitavam.
+            O som do vento nas árvores durante as idas e vindas á cidade,
+            atiçavam seu coração, você sonhava diáriamente com o mundo á fora,
+            com tesouros e perigos que expreitavam.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Camponês'">
             Você sempre teve baixas expectativas, acreditava na simplicidade da
-            vida e raramente saia de seu vilarejo para visitar outras terras,
-            manhãs monótonas e relaxar na varanda eram tudo para ti.
+            vida e raramente saia de seu vilarejo para visitar outras terras.
+            Manhãs calmas e relaxar na varanda eram tudo para ti.
           </div>
           <div class="q-mt-md">
             <q-btn
@@ -364,21 +363,19 @@
             acabar com o mundo.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Guerreiro'">
-            Você está nos portões de Mordor, seu batalhão é guiado por Gandalf o
-            Mago Branco, e sua missão é deter as forças malignas de Sauron dando
-            passagem ao escolhido, o portador do anel, que pretende destruí-lo.
+            Estando nos portões de Mordor, seu batalhão é guiado por Gandalf o
+            Mago Branco, sua missão é deter as forças malignas de Sauron dando
+            passagem ao escolhido, o portador do anel.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Aventureiro'">
-            Seu abto era treinar para o imprevísivel, ainda jovem, você era ágil
-            e imprudente, vivia se esgueirando entre cavernas á procura de
-            tesouros, explorar calabouços era sua diversão, sempre havia algo
-            novo á se descobrir.
+            Você costumava treinar para o imprevísivel, ainda jovem, era ágil e
+            imprudente, esgueirava-se entre cavernas. Explorar calabouços era
+            sua diversão, sempre havia algo novo para descobrir.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Camponês'">
-            Apesar de se acostumar e até gostar de sua rotina diária era
-            inevitável sentir um certo desgosto da vida básica que você levava,
-            entretanto, você sempre tratou os poucos que o conheciam muito bem e
-            com respeito
+            Mesmo se acostumando com a rotina diária era inevitável sentir um
+            certo desconforto da vida que você levava, entretanto, você sempre
+            tratou os poucos que o conheciam muito bem e com respeito.
           </div>
           <div class="q-mt-md">
             <q-btn
@@ -419,20 +416,20 @@
           <div class="q-mt-md text-center" v-if="seuTipo == 'Escolhido'">
             A jornada é repleta de desafios, ao chegar em Mordor há uma enorme
             batalha á frente, esgueirando-se entre os corpos você passa
-            desapercebido e chegando ao vulcão, você se desfaz do anel, salvando
-            assim o mundo.
+            desapercebido e chegando ao vulcão, você se desfaz do anel,
+            concluíndo sua missão.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Guerreiro'">
-            empunhando sua espada, você ouve cornetas tocarem, os exércitos
-            avançam e se chocam, a luta é árdua, você é fatalmente atingido por
-            uma flecha, por fim antes de cair você vê Escolhido atravessando o
-            fronte ileso.
+            Você ergue sua espada, cornetas tocam e os exércitos avançam, a luta
+            é árdua, uma flecha o atinge, fatalmente ferido, você decide avançar
+            sob os orcs á sua frente, seu corpo então desvanece, e você cai sob
+            o chão frio.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Aventureiro'">
-            Em uma de suas explorações noturnas na floresta, sua tocha se apaga,
-            sem iluminação você se perde, um pequeno tropeço o faz cair em uma
-            armadilha de Orcs, eles o cercam, depois de alguns ataques, seu
-            corpo inerte desvanece.
+            Em uma de suas aventuras noturnas, na floresta, sua tocha se apaga,
+            sem ver, você acaba tropeçando e cai desacordado em uma armadilha de
+            Orcs, eles o cercam, depois de alguns ataques, seu corpo inerte
+            desvanece.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Camponês'">
             Por fim, nem tudo era paz e sussego, durante a calada da noite

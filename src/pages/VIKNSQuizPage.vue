@@ -312,7 +312,7 @@
             diversos saqueadores.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Senhor de terras'">
-            Os campos sempre foram o seu lar, diariamente seu destino é traçado
+            O campo sempre foi seu lar, diariamente seu destino era tracejado
             entre as lavrouras herdadas de seus pais, você dá a terra valor e
             carinho, e ela o retribui com frutos.
           </div>
@@ -361,18 +361,17 @@
             Quando jovem, você lutou em diversas batalhas, vendo vikings se
             estraçalharem noite adentro, sua sabedoria enxergava além das
             espadas e machados, você guiava seus aliados á vitória usando sua
-            mente e estratégia
+            mente e estratégia.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Viking'">
-            Cercado, com um machado em mãos, você avança frente aos saqueadores,
-            os camponêses que fugiam veêm seu ataque como uma oportunidade e se
-            juntam a você, juntos vocês fazem uma contra investida avassaladora.
+            Cercado, você avança frente aos saqueadores, os camponêses que
+            fugiam veêm seu ataque como uma oportunidade e se aliam á você,
+            juntos vocês fazem uma contra investida avassaladora.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Senhor de terras'">
-            A muito a ser feito ainda, sabendo disso, diariamente você contrata
-            mais camponêses a seu comando, são mais bocas para alimentar mas
-            seus olhos enxergam muito mais que isso, você vê oportunidade e um
-            futuro próspero.
+            A muito a ser feito ainda, sabendo disso, você contrata camponêses a
+            seu comando, são mais bocas para alimentar mas seus olhos enxergam
+            muito mais que isso, você vê oportunidade e um futuro próspero.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Camponês'">
             O trabalho era árduo e o pouco que você ganhava com o exforço era
@@ -421,13 +420,13 @@
             regendo com honra, justiça e sabedoria toda Escadinávia.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Viking'">
-            O ataque repelido por vocês, os saqueadores fogem, embora ferido
-            após o combate, você e seus aliados partem mar á dentro em busca de
+            Vocês repelem os saqueadores, eles fogem, embora ferido após o
+            combate, você e seus aliados partem mar á dentro em busca de
             vingança, esse seria só um de seus passos para se tornar o maior
             viking da história.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Senhor de terras'">
-            Seu vilarejo atraiu más olhares, saqueadores, invadem suas terras e
+            Seu vilarejo atrai maus olhares, saqueadores, invadem suas terras e
             te roubam o pouco que tinha, já não tendo como sustentar os
             trabalhadores você abandona sua vila e vive o resto de sua vida em
             uma cidade próxima como comerciante.

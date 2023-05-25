@@ -310,8 +310,8 @@
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo'">
             Você sempre foi apto a utilizar a magia sob seu favor, ela era como
-            o próprio sangue que percorria suas veias, visto por ti como uma
-            dádiva, sempre a seu comando e a mercê de seu destino.
+            o próprio sangue que percorria suas veias, uma dádiva, sempre a seu
+            comando e a mercê de seu destino.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo Aprendiz'">
             Ainda quando criança, no quarto de seus pais você achou encondida em
@@ -368,10 +368,10 @@
             alcançar seus pais.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo'">
-            Muitos te admiravam e alguns até de ti tinham medo, para você era
-            irrelevante, sua prioridade sempre foi algo além da compreensão,
-            você buscava seu próprio limite, enfrentar seu destino com tudo que
-            estivesse a seu alcance.
+            Você era admirado, alguns até de você tinham medo, irrelevante, sua
+            prioridade sempre foi algo além da compreensão, você buscava seu
+            próprio limite, enfrentar seu destino com tudo que estivesse ao seu
+            alcance.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo Aprendiz'">
             Sua afinidade pela magia era notável, mas algo lhe faltava, algo
@@ -425,8 +425,8 @@
             v-if="seuTipo == 'Grande Feiticeiro'"
           >
             Por fim você se tornou um grande feiticeiro, seu poder e sabedoria
-            são imensuráveis, a magia dentro de você energiza sua alma, você
-            rege a lei natural do mundo com justiça, honra e respeito.
+            eram imensuráveis, a magia energizava sua alma, você regia a lei
+            natural do mundo com justiça, honra e respeito.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Bruxo'">
             Em uma armadilha, cercado por diversos bruxos das trevas, era
@@ -441,9 +441,9 @@
             promissor adiante.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Trouxa'">
-            Desconfortante no início mas você aprendeu a dar um jeito,
-            conquistou seu lugar no mundo do seu jeito, com um bom emprego, um
-            lar e uma linda família.
+            Desconfortante no início mas você aprendeu a dar um jeito, você
+            soube conquistar seu lugar no mundo, com um bom emprego, um lar e
+            uma linda família.
           </div>
           <div class="q-mt-md">
             <q-btn

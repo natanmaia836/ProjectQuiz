@@ -308,10 +308,9 @@
             situação, ela tira um pedaço de pão do bolso e divide com você.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Nobre'">
-            Você sempre foi muito astuto e apto a esquivar dos males da vida, a
-            nobreza o guiava pouco a pouco ao topo, filho de um grande general,
-            você dava valor ao dinheiro e o poder, qualquer coisa que se opusera
-            á seu desejo caíria por terra.
+            Você sempre foi muito astuto e de boa lábia, filho de um grande
+            general, a nobreza o guiava pouco a pouco ao topo, você dava valor
+            ao dinheiro e ao poder.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Guerreiro'">
             Ainda quando criança, orfão, pobre e sem rumo, um ferreio de um
@@ -367,8 +366,8 @@
           >
             Passam-se anos, vocês agora são irmãos e se exforçam juntos para
             ganhar a vida, um pouco mais velhos, vocês buscam pelo passado,
-            sobre familiares desaparecidos e descobrem juntos que o sangue real
-            corre por suas veias.
+            sobre familiares desaparecidos, descobrem juntos que o sangue real
+            corre em suas veias.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Nobre'">
             Aos poucos você ganhava voz no palácio, seus feitos atraíam maus
@@ -383,10 +382,9 @@
             é levado a força.
           </div>
           <div class="q-mt-md text-center" v-if="seuTipo == 'Mendigo'">
-            Certa vez, com fome, você decide roubar maçãs frescas de uma
-            vendedora local, os guardas veêm você, o espancam e prendem-no em
-            uma cela mofada do castelo, ainda machucado, você sorri lembrando do
-            gosto das maçãs.
+            Certa vez, com fome, você rouba maçãs frescas de uma vendedora
+            local, os guardas veêm você, o espancam e prendem-no em uma cela no
+            castelo, ainda machucado, você sorri lembrando do gosto das maçãs.
           </div>
           <div class="q-mt-md">
             <q-btn
