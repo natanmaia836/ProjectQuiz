@@ -357,10 +357,7 @@
             size="56px"
             v-if="seuTipo == 'Camponês' && screenWidth > 530"
           />
-          <div
-            class="q-mt-md text-center"
-            v-if="seuTipo == 'Jarl' && screenWidth > 530"
-          >
+          <div class="q-mt-md text-center" v-if="seuTipo == 'Jarl'">
             Quando jovem, você lutou em diversas batalhas, vendo vikings se
             estraçalharem noite adentro, sua sabedoria enxergava além das
             espadas e machados, você guiava seus aliados á vitória usando sua
@@ -516,7 +513,7 @@ export default defineComponent({
     const nextOne = () => {
       limparAll();
       if (slide.value == 2) {
-        subtitle.value = "Odin é representado na série de que forma?";
+        subtitle.value = "Que animal representa Odin na mitologia nórdica";
         texto1.value = "Um gato";
         texto2.value = "Um corvo";
         texto3.value = "Um Urso";

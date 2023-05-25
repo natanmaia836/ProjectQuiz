@@ -360,7 +360,7 @@
           />
           <div
             class="q-mt-md text-center"
-            v-if="seuTipo == 'Grande Feiticeiro' && screenWidth > 530"
+            v-if="seuTipo == 'Grande Feiticeiro'"
           >
             Em alguns dias seu talento e sua dedicação já eram anormais,
             ultrapassavam os limites que barravam até os sábios, essa sua força

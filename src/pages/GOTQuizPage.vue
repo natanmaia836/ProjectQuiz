@@ -363,7 +363,7 @@
           />
           <div
             class="q-mt-md text-center"
-            v-if="seuTipo == 'Herdeiro do Trono' && screenWidth > 530"
+            v-if="seuTipo == 'Herdeiro do Trono'"
           >
             Passam-se anos, vocês agora são irmãos e se exforçam juntos para
             ganhar a vida, um pouco mais velhos, vocês buscam pelo passado,

@@ -357,10 +357,7 @@
             size="56px"
             v-if="seuTipo == 'Camponês' && screenWidth > 530"
           />
-          <div
-            class="q-mt-md text-center"
-            v-if="seuTipo == 'Escolhido' && screenWidth > 530"
-          >
+          <div class="q-mt-md text-center" v-if="seuTipo == 'Escolhido'">
             A aventura é árdua, diversos desafios e perigos, ao chegar em
             Valfenda, alguns companheiros se juntam á sua jornada, sua missão é
             destruir o anel no vulcão de Mordor antes que Sauron o use para
