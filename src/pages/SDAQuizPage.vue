@@ -462,7 +462,7 @@ export default defineComponent({
   setup() {
     const slide = ref(1);
     const slideDialogResultado = ref(1);
-    const subtitle = ref("Qual era raça de Frodo no filme?");
+    const subtitle = ref("Qual era raça de Frodo no filme?.");
     const texto1 = ref("Orc");
     const texto2 = ref("Anão");
     const texto3 = ref("Hobbit");
@@ -513,45 +513,47 @@ export default defineComponent({
       limparAll();
       if (slide.value == 2) {
         subtitle.value =
-          "O anél de Sauron é o mais forte dentre os anéis existentes.";
+          "O anél de Sauron é o mais forte dentre os anéis existentes?.";
       } else if (slide.value == 3) {
-        subtitle.value = "Galadriel faz parte dos 3 reis elfos.";
+        subtitle.value = "Galadriel faz parte dos 3 reis elfos?.";
       } else if (slide.value == 4) {
         subtitle.value =
-          "A espada que Bilbo deu a Frodo, ilumina-se quando está próxima de Orcs?";
+          "A espada que Bilbo deu a Frodo, ilumina-se quando está próxima de Orcs?.";
       } else if (slide.value == 5) {
-        subtitle.value = "Quais são os outros Hobbits que acompanham Frodo?";
+        subtitle.value = "Quais são os outros Hobbits que acompanham Frodo?.";
         texto1.value = "Sam, Plinpin, Finn ";
         texto2.value = "Pippin, Merry e Sam";
         texto3.value = "Sam, Flóki e Plinpin";
         texto4.value = "Frodo, Sam e Pippin";
       } else if (slide.value == 6) {
-        subtitle.value = "Qual o nome do anão de Senhor dos Anéis?";
+        subtitle.value =
+          "Qual o nome do anão que se une á frodo em Senhor dos Anéis?.";
         texto1.value = "Gimli";
         texto2.value = "Jimmy";
         texto3.value = "Gimme";
         texto4.value = "Ghille";
       } else if (slide.value == 7) {
         subtitle.value =
-          "Que instrumento Boromir usa para alertar os amigos do perigo?";
+          "Que instrumento Boromir usa para alertar os amigos do perigo?.";
         texto1.value = "Flauta";
         texto2.value = "Alaúde";
         texto3.value = "Corneta";
         texto4.value = "Vuvuzela";
       } else if (slide.value == 8) {
-        subtitle.value = "Qual é principal arma de Legolas no filme?";
+        subtitle.value = "Qual é principal arma de Legolas no filme?.";
         texto1.value = "Adaga";
         texto2.value = "Espada";
         texto3.value = "Arco";
         texto4.value = "Machado";
       } else if (slide.value == 9) {
-        subtitle.value = "Qual frase que Gandalf grita para Balrog no filme?";
+        subtitle.value =
+          "Que frase icônica Gandalf grita para Balrog no filme?.";
         texto1.value = "Te vejo por ai!";
         texto2.value = "Não adianta correr!";
         texto3.value = "Você não vai passar!";
         texto4.value = "Sou Gandalf o cinzento!";
       } else if (slide.value == 10) {
-        subtitle.value = "Quantos filmes há na franquia Senhor dos Anéis?";
+        subtitle.value = "Quantos filmes há na franquia Senhor dos Anéis?.";
         texto1.value = "4";
         texto2.value = "3";
         texto3.value = "2";

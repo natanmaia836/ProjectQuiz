@@ -474,7 +474,7 @@ export default defineComponent({
   setup() {
     const slide = ref(1);
     const slideDialogResultado = ref(1);
-    const subtitle = ref("Quantos Dragões tinha Daenerys na série?");
+    const subtitle = ref("Quantos Dragões tinha Daenerys na série?.");
     const texto1 = ref("Três");
     const texto2 = ref("Dois");
     const texto3 = ref("Um");
@@ -524,53 +524,55 @@ export default defineComponent({
     const nextOne = () => {
       limparAll();
       if (slide.value == 2) {
-        subtitle.value = "A qual casa John Snow pertence na série?";
+        subtitle.value = "A qual casa John Snow pertence na série?.";
         texto1.value = "Stark";
         texto2.value = "Lannister";
         texto3.value = "Baratheon";
         texto4.value = "Targaryen";
       } else if (slide.value == 3) {
         subtitle.value =
-          "Quando se ouve 'Valar Morghulis' o que deve ser respondido?";
+          "Quando se ouve 'Valar Morghulis' o que deve ser respondido?.";
         texto1.value = "Saúde!";
         texto2.value = "Valar Dohaeris";
         texto3.value = "Dracarys!";
         texto4.value = "Muña Zaldrizoti";
       } else if (slide.value == 4) {
-        subtitle.value = "O que significa 'Dracarys' em Valiriano?";
+        subtitle.value = "O que significa 'Dracarys' em Valiriano?.";
         texto1.value = "Ataque!";
         texto2.value = "Cuspa fogo!";
         texto3.value = "Ignição!";
         texto4.value = "Fogo de dragão!";
       } else if (slide.value == 5) {
         subtitle.value =
-          "Na série, James Lannister empurra Bran do castelo deixando-o paralítico?";
+          "Na série, James Lannister empurra Bran do castelo deixando-o paralítico?.";
       } else if (slide.value == 6) {
-        subtitle.value = "Qual a causa da morte de Joffrey?";
+        subtitle.value =
+          "Qual a causa da morte de Joffrey Baratheon na série?.";
         texto1.value = "Decapitado";
         texto2.value = "Envenenamento";
         texto3.value = "Afogamento";
         texto4.value = "Queimado";
       } else if (slide.value == 7) {
-        subtitle.value = "Que animal representa a casa dos Baratheon na série?";
+        subtitle.value =
+          "Que animal representa a casa dos Baratheon na série?.";
         texto1.value = "Alce";
         texto2.value = "Lobo";
         texto3.value = "Leão";
         texto4.value = "Polvo";
       } else if (slide.value == 8) {
-        subtitle.value = "Quantos filhos Cersei Lannister tinha?";
+        subtitle.value = "Quantos filhos Cersei Lannister tinha?.";
         texto1.value = "Nenhum";
         texto2.value = "Três";
         texto3.value = "Dois";
         texto4.value = "Um";
       } else if (slide.value == 9) {
-        subtitle.value = "Na série quem mata o Rei da noite?";
+        subtitle.value = "Na série quem mata o Rei da noite?.";
         texto1.value = "John Snow";
         texto2.value = "Theon Greyjoy";
         texto3.value = "Arya Stark";
         texto4.value = "Brienne de Tarth";
       } else if (slide.value == 10) {
-        subtitle.value = " No final da série quem herda o trono de ferro?";
+        subtitle.value = " No final da série quem herda o trono de ferro?.";
         texto1.value = "John Snow";
         texto2.value = "Tyrion Lannister";
         texto3.value = "Bran Stark";

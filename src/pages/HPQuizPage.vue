@@ -470,7 +470,7 @@ export default defineComponent({
   setup() {
     const slide = ref(1);
     const slideDialogResultado = ref(1);
-    const subtitle = ref("Quais são os três protagonistas de Harry Potter?");
+    const subtitle = ref("Quais são os três protagonistas de Harry Potter?.");
     const texto1 = ref("Harry, Hermione e Toby");
     const texto2 = ref("Harry, Rony e Dolores");
     const texto3 = ref("Rony, Hermione e Draco");
@@ -520,50 +520,51 @@ export default defineComponent({
     const nextOne = () => {
       limparAll();
       if (slide.value == 2) {
-        subtitle.value = "Qual o feitiço usado para abrir portas trancadas?";
+        subtitle.value =
+          "Qual feitiço é usado no filme para abrir portas trancadas?.";
         texto1.value = "Expecto Patronum";
         texto2.value = "Expelliarmus";
         texto3.value = "Alohomora";
         texto4.value = "Crucio";
       } else if (slide.value == 3) {
-        subtitle.value =
-          "A casa de Hogwarts que Harry Potter é selecionado é Lufa-Lufa?";
+        subtitle.value = "A casa de Harry no filme é Lufa-Lufa?.";
       } else if (slide.value == 4) {
-        subtitle.value = "O patrono de Hermione Granger é um gato?";
+        subtitle.value = "O patrono de Hermione Granger é um gato?.";
       } else if (slide.value == 5) {
-        subtitle.value = "Qual a casa de Harry em Hogwarts?";
+        subtitle.value = "Qual a casa de Harry em Hogwarts?.";
         texto1.value = "Sonserina";
         texto2.value = "Lufa-Lufa";
         texto3.value = "Corvinal";
         texto4.value = "Grifinória";
       } else if (slide.value == 6) {
-        subtitle.value = "A Nimbus 2000 é uma";
+        subtitle.value = "A Nimbus 2000 é uma ...";
         texto1.value = "Varinha";
         texto2.value = "Cajado";
         texto3.value = "Vassoura";
         texto4.value = "Horcrux";
       } else if (slide.value == 7) {
-        subtitle.value = "Qual o nome da coruja do Harry Potter?";
+        subtitle.value = "Qual o nome da coruja de Harry Potter?.";
         texto1.value = "Edward";
         texto2.value = "Edwiges";
         texto3.value = "Gizmo";
         texto4.value = "Pidgeot";
       } else if (slide.value == 8) {
         subtitle.value =
-          "Qual o feitiço que conjura um animal de energia positiva.";
+          "Qual o feitiço que conjura um animal de energia positiva?.";
         texto1.value = "Expecto Patronum";
         texto2.value = "Avada Kedavra";
         texto3.value = "Expectro Patronoum";
         texto4.value = "Expelliarmus";
       } else if (slide.value == 9) {
-        subtitle.value = "Qual o feitiço proíbido usado por Voldemort?";
+        subtitle.value =
+          "Qual feitiço do mal é usado por Voldemort em Harry Potter?.";
         texto1.value = "Sectumsempra";
         texto2.value = "Valar Morghulis";
         texto3.value = "Avada Kedrava";
         texto4.value = "Avada Kedavra";
       } else if (slide.value == 10) {
         subtitle.value =
-          "A Pedra Filosofal é o primeiro livro da série Harry Potter?";
+          "A Pedra Filosofal é o primeiro livro da saga Harry Potter?.";
       }
     };
     const sendEmail = () => {

@@ -462,7 +462,7 @@ export default defineComponent({
   setup() {
     const slide = ref(1);
     const slideDialogResultado = ref(1);
-    const subtitle = ref("Os vikings acreditavam em vida após a morte?");
+    const subtitle = ref("Os vikings acreditavam em vida após a morte?.");
     const texto1 = ref("");
     const texto2 = ref("");
     const texto3 = ref("");
@@ -512,7 +512,7 @@ export default defineComponent({
     const nextOne = () => {
       limparAll();
       if (slide.value == 2) {
-        subtitle.value = "Que animal representa Odin na mitologia nórdica";
+        subtitle.value = "Que animal representa Odin na mitologia nórdica.";
         texto1.value = "Um gato";
         texto2.value = "Um corvo";
         texto3.value = "Um Urso";
@@ -525,36 +525,36 @@ export default defineComponent({
         texto3.value = "Escudeira";
         texto4.value = "Lanceira";
       } else if (slide.value == 4) {
-        subtitle.value = "Quantos filhos Ragnar teve durante a série?";
+        subtitle.value = "Quantos filhos Ragnar teve durante a série?.";
         texto1.value = "5";
         texto2.value = "3";
         texto3.value = "4";
         texto4.value = "1";
       } else if (slide.value == 5) {
         subtitle.value =
-          "O paraíso para os vikings era conhecido como Álfheim?";
+          "O paraíso para os vikings era conhecido como Álfheim?.";
       } else if (slide.value == 6) {
         subtitle.value =
-          "Na mitologia nórdica qual o nome do lobo presente no Ragnarok?";
+          "Na mitologia nórdica, qual o nome do lobo presente no Ragnarok?.";
         texto1.value = "yggdrasil";
         texto2.value = "Hela";
         texto3.value = "Ymir";
         texto4.value = "Fenrir";
       } else if (slide.value == 7) {
         subtitle.value =
-          "Na série Lagertha é assassinada por Ivar o desossado?";
+          "Na série, Lagertha é assassinada por Ivar o desossado?.";
       } else if (slide.value == 8) {
-        subtitle.value = "O que é o Ragnarok para os vikings?";
+        subtitle.value = "O que é o Ragnarok para os vikings?.";
         texto1.value = "Vida após a morte";
         texto2.value = "Uma celebração";
         texto3.value = "O fim do mundo";
         texto4.value = "Um bom MMORPG";
       } else if (slide.value == 9) {
         subtitle.value =
-          "Ivar o Desossado era conhecido por ser um bom estrategista?";
+          "Ivar o Desossado era conhecido por ser um bom estrategista?.";
       } else if (slide.value == 10) {
         subtitle.value =
-          "Na série durante comemorações, como brindavam os vikings?";
+          "Na série, durante comemorações, como brindavam os vikings?.";
         texto1.value = "Skäl!";
         texto2.value = "Irra!";
         texto3.value = "Sáude!";
