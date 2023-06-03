@@ -257,7 +257,7 @@
           /></span>
           <div class="q-mt-md text-center">
             <span class="text-h7 text-weight-bold"
-              >Parabéns!, você é um: {{ seuTipo }}
+              >Parabéns! Você é um: {{ seuTipo }}
             </span>
           </div>
           <div class="q-mt-md text-center">
@@ -462,6 +462,7 @@
 
 <script>
 import { ref, defineComponent, onMounted } from "vue";
+import { createClient } from "@supabase/supabase-js";
 import { Notify } from "quasar";
 
 export default defineComponent({
@@ -567,7 +568,7 @@ export default defineComponent({
           "A Pedra Filosofal é o primeiro livro da saga Harry Potter?.";
       }
     };
-    const sendEmail = () => {
+    const sendEmail = async () => {
       MsgSucesso();
       if (acertos.value <= 3) {
         seuTipo.value = "Trouxa";
