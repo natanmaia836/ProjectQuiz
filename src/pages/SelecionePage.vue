@@ -12,7 +12,7 @@
             src="~assets/HP/harrypotter-carousel-1.png"
           ></q-img>
           <q-card class="q-pa-xs text-center"
-            >Qual o seu nivel de potterhead?</q-card
+            >Quem você seria em Harry Potter?</q-card
           >
         </a>
       </div>
@@ -20,7 +20,7 @@
         <a href="/sda-quiz" class="textos">
           <q-img class="imagens" src="~assets/SDA/sda-1.jpg"></q-img>
           <q-card class="q-pa-xs text-center"
-            >O quanto você conhce Senhor dos Aneis?</q-card
+            >O quanto você conhece sobre Senhor dos Anéis?</q-card
           >
         </a>
       </div>
@@ -31,14 +31,14 @@
         <a href="/got-quiz" class="textos">
           <q-img class="imagens" src="~assets/GOT/got-1.webp"></q-img>
           <q-card class="q-pa-xs text-center"
-            >Qual é sua casa de Game of Thrones?</q-card
+            >Quanto você sabe sobre Game of Thrones?</q-card
           >
         </a>
       </div>
       <div class="col-md col-xs-12 q-pa-md">
         <a href="/vikns-quiz" class="textos">
           <q-img class="imagens" src="~assets/VIKNS/vikns-1.webp"></q-img>
-          <q-card class="q-pa-xs text-center">Qual Vinking você seria?</q-card>
+          <q-card class="q-pa-xs text-center">Que Vinking você seria?</q-card>
         </a>
       </div>
     </div>
