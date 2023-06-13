@@ -1,5 +1,6 @@
 <template>
-  <q-layout class="body">
+  <fundo-animado> </fundo-animado>
+  <q-layout class="sobre">
     <div class="row justify-center">
       <img src="~assets/logotipo.png" style="max-width: 16rem" />
     </div>
@@ -47,9 +48,13 @@
 
 <script>
 import { ref, defineComponent } from "vue";
+import FundoAnimado from "src/components/FundoAnimado.vue";
 
 export default defineComponent({
   name: "SelecionePage",
+  components: {
+    FundoAnimado,
+  },
 
   setup() {
     return {};
@@ -57,7 +62,17 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
+.sobre {
+  position: absolute;
+  top: 0%;
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    top: 0%;
+  }
+}
 .imagens {
   max-height: 13rem;
   border-top-right-radius: 0.1rem;
