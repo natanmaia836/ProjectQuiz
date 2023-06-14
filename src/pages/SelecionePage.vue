@@ -39,7 +39,7 @@
       <div class="col-md col-xs-12 q-pa-md">
         <a href="/vikns-quiz" class="textos">
           <q-img class="imagens" src="~assets/VIKNS/vikns-1.webp"></q-img>
-          <q-card class="q-pa-xs text-center">Que Vinking você seria?</q-card>
+          <q-card class="q-pa-xs text-center">Que Viking você seria?</q-card>
         </a>
       </div>
     </div>
